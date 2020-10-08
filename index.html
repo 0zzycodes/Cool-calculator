@@ -1,0 +1,93 @@
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <title>Calculator</title>
+  </head>
+  <body>
+    <div id="container">
+      <div id="calculator">
+        <div class="control">
+          <div class="toggler">
+            <div class="ball"></div>
+          </div>
+          <span class="toggler-text">SWITCH TO DARK MODE</span>
+        </div>
+        <div id="result">
+          <div id="history">
+            <p id="history-value"></p>
+          </div>
+          <div id="output">
+            <p id="output-value">0</p>
+          </div>
+        </div>
+        <div id="keys">
+          <div class="expander"></div>
+          <button class="operator" id="clear">C</button>
+          <button class="operator" id="backspace">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="18.466"
+              viewBox="0 0 23 18.466"
+            >
+              <path
+                id="angle-double-left"
+                d="M36.145,104.2l7.846-7.846a1.379,1.379,0,0,1,1.956,0l1.3,1.3a1.379,1.379,0,0,1,0,1.956l-5.555,5.567,5.561,5.561a1.379,1.379,0,0,1,0,1.956l-1.3,1.31a1.379,1.379,0,0,1-1.956,0l-7.846-7.846a1.381,1.381,0,0,1-.006-1.961Zm-11.076,1.961,7.846,7.846a1.379,1.379,0,0,0,1.956,0l1.3-1.3a1.379,1.379,0,0,0,0-1.956l-5.555-5.567,5.561-5.561a1.379,1.379,0,0,0,0-1.956l-1.3-1.31a1.379,1.379,0,0,0-1.956,0L25.074,104.2a1.381,1.381,0,0,0-.006,1.961Z"
+                transform="translate(-24.662 -95.95)"
+                fill="#bda376"
+              />
+            </svg>
+          </button>
+          <button class="operator" id="%">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="17"
+              height="20.286"
+              viewBox="0 0 23 26.286"
+            >
+              <path
+                id="percent"
+                d="M5.75,11.5A5.75,5.75,0,1,0,0,5.75,5.747,5.747,0,0,0,5.75,11.5Zm0-8.214A2.464,2.464,0,1,1,3.286,5.75,2.465,2.465,0,0,1,5.75,3.286Zm11.5,11.5A5.75,5.75,0,1,0,23,20.536,5.747,5.747,0,0,0,17.25,14.786Zm0,8.214a2.464,2.464,0,1,1,2.464-2.464A2.465,2.465,0,0,1,17.25,23ZM20.14.01,21.763.005a1.232,1.232,0,0,1,1.011,1.941L3.974,25.752a1.23,1.23,0,0,1-1.006.524l-1.715.005A1.232,1.232,0,0,1,.241,24.34L19.134.534A1.23,1.23,0,0,1,20.14.01Z"
+                fill="#bda376"
+              />
+            </svg>
+          </button>
+          <button class="operator" id="/">&#247;</button>
+          <button class="number" id="7">7</button>
+          <button class="number" id="8">8</button>
+          <button class="number" id="9">9</button>
+          <button class="operator" id="*">&times;</button>
+          <button class="number" id="4">4</button>
+          <button class="number" id="5">5</button>
+          <button class="number" id="6">6</button>
+          <button class="operator" id="-">-</button>
+          <button class="number" id="1">1</button>
+          <button class="number" id="2">2</button>
+          <button class="number" id="3">3</button>
+          <button class="operator" id="+">+</button>
+          <button class="number" id="0">0</button>
+          <button class="number" id="00">00</button>
+          <button class="number" id=".">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="8"
+              height="8"
+              viewBox="0 0 8 8"
+            >
+              <rect
+                id="Rectangle_7"
+                data-name="Rectangle 7"
+                width="8"
+                height="8"
+                rx="4"
+                fill="#6c6c6c"
+              />
+            </svg>
+          </button>
+          <button class="operator equal" id="=">=</button>
+        </div>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>

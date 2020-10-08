@@ -1,0 +1,146 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Source Sans Pro";
+}
+#container {
+  background-color: black;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#calculator {
+  width: 320px;
+  height: 90vh;
+  background: linear-gradient(#ffffff, #757778);
+  margin: 0 auto;
+  position: relative;
+  border-radius: 20px;
+  box-shadow: 0 3px 6px #00000044;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.control {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+.toggler,
+.ball {
+  width: 45px;
+  height: 25px;
+  background-color: #ffffff;
+  box-shadow: 0 3px 6px #00000044;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  padding: 0 5px;
+}
+.ball {
+  height: 15px;
+  width: 15px;
+  padding: 0;
+  border: 2px solid #707070;
+  transition: all 0.3s ease-in-out;
+}
+.toggler-text {
+  font-weight: bold;
+  color: #707070;
+}
+#result {
+  /* height: 120px; */
+  margin-bottom: 10px;
+}
+#history {
+  text-align: right;
+  height: 20px;
+  margin: 0 20px;
+  padding-top: 20px;
+  font-size: 15px;
+  color: #626262;
+}
+#output {
+  text-align: right;
+  height: 60px;
+  margin: 10px 20px;
+  font-size: 30px;
+}
+#keys {
+  /* height: 400px; */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  position: relative;
+}
+.expander {
+  position: absolute;
+  width: 50px;
+  height: 6px;
+  top: -10px;
+  right: 0;
+  left: 0;
+  margin: auto;
+  border-radius: 5px;
+  background-color: #ffffff;
+  box-shadow: 0 3px 6px #00000044;
+  cursor: pointer;
+}
+.operator,
+.number,
+.empty {
+  width: 50px;
+  height: 50px;
+  margin: 15px;
+  border-radius: 50%;
+  border-width: 0;
+  font-weight: bold;
+  font-size: 15px;
+  box-shadow: 0 3px 6px #00000044;
+  outline: 0;
+}
+.number {
+  background-color: #ffffff;
+}
+.number,
+.operator {
+  cursor: pointer;
+  color: #707070;
+  font-weight: bold !important;
+}
+.operator:active,
+.number:active {
+  box-shadow: 0 3px 6px #00000011;
+}
+.operator {
+  font-size: 25px;
+  color: #9b2bf4;
+  background-color: #dfd3e7;
+}
+
+#clear {
+  background-color: #feb92d;
+  color: #ffffff;
+}
+
+.equal {
+  background-color: #9b2bf4;
+  color: #ffffff;
+}
+@media (max-width: 400px) {
+  #calculator {
+    width: 100vw;
+    height: 100vh;
+  }
+  #keys {
+    /* width: 100%; */
+  }
+}
